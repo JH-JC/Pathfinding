@@ -568,11 +568,10 @@ public class Graph  {
             }
 
         }
-        //A STAR WORKS ESSENTIALLY THE SAME AS DIJKSTRA CREATING A PRIORITY QUE AND PROPAGATING OUTWARDS UNTIL IT FINDS THE END
-        //HOWEVER A STAR BUILDS IN A HEURISTIC OF DISTANCE FROM ANY NODE TO THE FINISH
-        //THIS MEANS THAT NODES THAT ARE CLOSER TO THE FINISH WILL BE EXPLORED FIRST
-        //THIS HEURISTIC IS BUILT IN BY SORTING THE QUE ACCORDING TO HOPS PLUS DISTANCE UNTIL THE FINISH
-
+        //a star works essentially the same as dijkstra creating a priority que and propagating outwards until it finds the end
+        //however a star builds in a heuristic of distance from any node to the finish
+        //this means that nodes that are closer to the finish will be explored first
+        //this heuristic is built in by sorting the que according to hops plus distance until the finish
 		public void AStar() {
 			// TODO Auto-generated method stub
 			 ArrayList < Node > priority = new ArrayList < Node > ();
